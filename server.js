@@ -6,6 +6,8 @@ var express = require('express')
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
 
+// ok?
+
 app.get('/', function (req, res, next) {
   try {
     var html = template({ title: 'Home' })
